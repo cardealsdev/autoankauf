@@ -487,16 +487,16 @@ input[type="submit"] {
     margin: 20px;
     padding: 20px;
   }
+
+  .icon-container-hover:hover {
+    background-color:#bbc7d1;
+  }
   
   .icon-image {
     height: 30px;
     width: 30px;
   }
-  
-  .icon-image:hover {
-    fill: #fff !important;
-    transition: fill 0.5s;
-  }
+
   .my-button-class {
     display: flex;
     align-items: center;
@@ -516,13 +516,14 @@ input[type="submit"] {
     font-size: 16px;
     line-height: 28px;
     color: #052451;
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
   
   .icon-text-2 {
     font-size: 26px;
     line-height: 28px;
     color: #052451;
-    padding-left: 30px;
   }
   
   .section-banner {
@@ -734,6 +735,11 @@ input[type="submit"] {
   .legal__links {
     display: flex;
     align-items: center;
+  }
+
+  .contact-text-container {
+    display: flex;
+    flex-direction: column;
   }
   
   
