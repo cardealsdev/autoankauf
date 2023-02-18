@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <link rel="stylesheet" type="text/css" href="/css/aboutus.css">
+
 
 </head>
 
@@ -25,13 +27,73 @@
     </div>
   </nav>
 
+  <!-- <section class="aboutus">
+    <div class="aboutus-content">
+      <h2>About Us</h2>
+      <p>Some text about our company and what we do goes here.</p>
+      <div class="slideshow2">
+        <img src="/images/1.avif" alt="Slideshow Image 1">
+        <img src="/images/2.avif" alt="Slideshow Image 2">
+        <img src="/images/6304c908c13f3e1daab2b0a2_Farie_Piktorgamme_RGB_Positiv_Sicherheit_Garantie-p-500.png" alt="Slideshow Image 3">
+      </div>
+    </div>
+ <div class="aboutus-image">
+      <img src="aboutus-image.jpg" alt="About Us Image">
+    </div> -->
+  <!-- </section> -->
 
-
-
-
-
-
+  <section class="about-us">
+    <div class="container-about-us">
+      <div class="row-about-us">
+        <div class="col-md-6">
+          <div class="about-us-image">
+            <img src="/images/1.avif" alt="Your Image" style="max-width: 100%;">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="about-us-content">
+            <h2>Über uns</h2>
+            <p>Autokauf
+              Wir kaufen alle Gebrauchtwagen, Privat- oder Firmenwagen, Transporter, Nutzfahrzeuge
+              sowie Unfallautos in der ganzen Schweiz.
+              Egal wie viele Kilometer
+              Es gibt auf der Theke und
+              immer zum besten Preis.
+              Egal wie viele Kilometer
+              Sie können entweder mit Ihrem Fahrzeug zu einem Direktverkauf mit BARZAHLUNG auf unsere Seite gehen
+              oder wir kommen zu Ihnen nach Hause, um die Bergung Ihres Autos zu schätzen, und bezahlen Sie sofort bar.
+              <br>
+              immer zum besten Preis
+              <br>
+              <br>
+              <br>
+              Wir sind bestrebt, Ihnen das bestmögliche Angebot für Ihr Fahrzeug zu machen.
+              Senden Sie uns eine Kontaktanfrage (Formular-Link) und wir melden uns schnellstmöglich bei Ihnen zurück.
+              <br>
+              Kundendienst
+              Ihre Zufriedenheit und Kunden ist unsere Priorität
+              <br>
+              Das Engagement von Carsdeal
+              Extra Service Transport gratis, wir holen Ihr Auto in der ganzen Schweiz ab.
+              Gerne übernehmen wir für Sie auch alle administrativen Arbeiten
+              (Dokumente ausfüllen, Fahrzeug abmelden
+              nach dem Verkauf an das kantonale Strassenverkehrsamt).
+              <br>
+              Um schnellstmöglich kontaktiert zu werden, füllen Sie das aus
+              Form</p>
+              <div class="contact-us">
+                <p>Kontaktiere uns für weitere Informationen:</p>
+                <a href="https://example.com" class="btn-secondry">Kontakt</a>
+              </div>
+              
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   
+
+
   <footer class="footer">
     <div class="footer__addr">
       <h1 class="footer__logo"><img src="/images/logo-big.png" alt="Logo"></h1>
@@ -125,39 +187,6 @@
         <p>You can contact us at info@mysite.com</p>
       </div> -->
 
-
-
-
-  <script>
-    var slideIndex = 0;
-    showSlides();
-
-    function showSlides() {
-      var i;
-      var slides = document.getElementsByClassName("slideshow-item");
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      slideIndex++;
-      if (slideIndex > slides.length) {
-        slideIndex = 1;
-      }
-      slides[slideIndex - 1].style.display = "block";
-      setTimeout(showSlides, 3000); // Change image every 3 seconds
-    }
-  </script>
-  <script>  const slides = document.querySelectorAll('.slide'); // Select all slide elements
-    let currentSlide = 0; // Set the current slide to the first slide
-    let slideInterval = setInterval(nextSlide, 2000); // Set the interval for the next slide to be displayed (in this case, 2 seconds)
-
-    function nextSlide() {
-      // Remove the 'active' class from the current slide
-      slides[currentSlide].classList.remove('active');
-      // Increment the current slide
-      currentSlide = (currentSlide + 1) % slides.length;
-      // Add the 'active' class to the new current slide
-      slides[currentSlide].classList.add('active');
-    }</script>
 </body>
 
 </html>
