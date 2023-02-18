@@ -297,7 +297,7 @@ input[type="submit"] {
 
   .grid-wrapper {
     display: flex;
-    padding: 20px 20px 40px;
+    padding: 20px 120px 60px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 20px;
@@ -360,8 +360,9 @@ input[type="submit"] {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     
-    padding: 60px;
+    padding: 20px;
     background-color: #f2f2f2!important;
+    box-shadow: 0 6px 12px 0px rgba(5, 36, 81 , 10%), 0 -6px 12px 0px rgba(5, 36, 81 , 10%);
   }
   
   .banner-grid-item {
@@ -487,16 +488,16 @@ input[type="submit"] {
     margin: 20px;
     padding: 20px;
   }
-
-  .icon-container-hover:hover {
-    background-color:#bbc7d1;
-  }
   
   .icon-image {
     height: 30px;
     width: 30px;
   }
-
+  
+  .icon-image:hover {
+    fill: #fff !important;
+    transition: fill 0.5s;
+  }
   .my-button-class {
     display: flex;
     align-items: center;
@@ -516,14 +517,13 @@ input[type="submit"] {
     font-size: 16px;
     line-height: 28px;
     color: #052451;
-    margin-top: 0px;
-    margin-bottom: 0px;
   }
   
   .icon-text-2 {
     font-size: 26px;
     line-height: 28px;
     color: #052451;
+    padding-left: 30px;
   }
   
   .section-banner {
@@ -581,7 +581,7 @@ input[type="submit"] {
     flex-direction: row;
     align-items: center;
     margin-bottom: 20px;
-    padding-top: 30px;
+    padding-top: 50px;
     justify-content: center;
   }
 
@@ -644,6 +644,7 @@ input[type="submit"] {
     color: #2f2f2f;
     background-color: #fff;
     border-top: 1px solid #e5e5e5;
+    max-height: 450px;
   }
   
   .footer > * {
@@ -736,11 +737,6 @@ input[type="submit"] {
     display: flex;
     align-items: center;
   }
-
-  .contact-text-container {
-    display: flex;
-    flex-direction: column;
-  }
   
   
   
@@ -765,5 +761,26 @@ input[type="submit"] {
     
     .footer__nav {
       flex: 2 0px;
+    }
+  }
+
+  .counter {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .counter-animate {
+    animation: count-up 1s ease-out;
+  }
+  
+  @keyframes count-up {
+    from {
+      opacity: 0;
+      transform: translateY(50%);
+    }
+    to {
+      opacity: 1;
+      transform: none;
     }
   }
