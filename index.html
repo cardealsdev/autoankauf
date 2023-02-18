@@ -97,7 +97,7 @@
     <div class="form-group">
       <label for="image"></label>
       <input type="file" id="image" accept="image/*">
-
+ 
     </div>
     <input type="submit" value="Verkaufe dein Auto">
   </form>
@@ -135,11 +135,11 @@
   <div class="banner-grid-container">
     <div class="banner-grid-item">
       <h4 class="banner-title">500 +</h2>
-        <p class="description">angekaufte Fahrzeuge</p>
+        <p class="description">Angekaufte Fahrzeuge</p>
     </div>
     <div class="banner-grid-item">
       <h4 class="banner-title">100 Prozent</h2>
-        <p class="description">zufriedene Kunden</p>
+        <p class="description">Zufriedene Kunden</p>
     </div>
     <div class="banner-grid-item last">
       <h4 class="banner-title">25 Jahre +</h2>
@@ -201,20 +201,19 @@
                 target="_blank" href="https://mediamodifier.com"><img style="width: 100%; height: 100%;"
                   src="/images/iconmonstr-whatsapp-1.svg"></a></div>
           </div>
-          <div class="contact-text-container">
-            <span class="icon-text-1">Whatsapp</span>
-            <span class="icon-text-2">076 481 86 86</span>
-          </div>
+          <p class="icon-text-1">Whatsapp</p>
+          <p class="icon-text-2">076 481 86 86</p>
         </div>
         <div class="icon-container">
           <div class="icon-container-hover">
             <div class="icon-image" style="position: relative; width: 50px; height: 50px;"><img
                 style="width: 100%; height: 100%;" src="images/phone-call-svgrepo-com.svg"></div>
           </div>
-          <div class="contact-text-container">
-            <span class="icon-text-1">Kündenhotline</span>
-            <span class="icon-text-2">0076 481 86 86</span>
-          </div>
+
+          <p class="icon-text-1">Kündenhotline<br>
+          <p class="icon-text-2">0076 481 86 86</p>
+          </p>
+          <p class="icon-text-2"></p>
         </div>
       </div>
     </div>
@@ -224,13 +223,6 @@
   <footer class="footer">
     <div class="footer__addr">
       <h1 class="footer__logo"><img src="/images/logo-big.png" alt="Logo"></h1>
-
-      <h2>Contact</h2>
-
-      <address>
-
-        <a class="footer__btn" href="mailto:example@gmail.com">Email Us</a>
-      </address>
     </div>
 
     <ul class="footer__nav">
@@ -290,14 +282,6 @@
         </ul>
       </li>
     </ul>
-
-    <div class="legal">
-      <p>&copy; 2023 CarDeals. All rights reserved.</p>
-
-      <div class="legal__links">
-        <span>Made by The nobles</span>
-      </div>
-    </div>
   </footer>
 
 
@@ -347,6 +331,26 @@
       // Add the 'active' class to the new current slide
       slides[currentSlide].classList.add('active');
     }</script>
+    <script>
+function incrementCounter(counter, targetValue, duration) {
+  let start = 0;
+  const increment = Math.ceil(targetValue / (duration / 20)); // increment value per step
+  const timer = setInterval(() => {
+    start += increment;
+    counter.innerHTML = start;
+    if (start >= targetValue) {
+      counter.innerHTML = targetValue; // set counter to the exact target value at the end
+      clearInterval(timer); // stop the timer
+    }
+  }, 20); // run the function every 20ms for smoother animation
+}
+
+// Select all the counter elements and loop through them
+const counters = document.querySelectorAll('.banner-grid-item h4');
+counters.forEach(counter => {
+  const targetValue = parseInt(counter.innerHTML);
+  incrementCounter(counter, targetValue, 1500);
+});</script>
 </body>
 
 </html>
