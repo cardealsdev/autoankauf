@@ -2,7 +2,6 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Lufga', sans-serif;
-   
   }
 
   nav {
@@ -340,6 +339,7 @@ input[type="submit"] {
     text-align: center;
     
 }
+
 .container-default p{
     align-self: center;
     text-align: center;
@@ -523,7 +523,6 @@ input[type="submit"] {
     font-size: 26px;
     line-height: 28px;
     color: #052451;
-    padding-left: 30px;
   }
   
   .section-banner {
@@ -782,5 +781,82 @@ input[type="submit"] {
     to {
       opacity: 1;
       transform: none;
+    }
+  }
+
+  .section-right-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  @media only screen and (max-width: 991px) {
+    #form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .container-collum {
+      display: flex;
+      flex-direction: column;
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+
+    .row {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .grid-wrapper {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      padding: 0;
+    }
+  
+    .grid-item {
+      width: 90%;
+      height: 450px;
+    }
+
+    .section-watsapp {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .section-left {
+      padding-left: 5px;
+      padding-right: 5px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .container-collum {
+      display: flex;
+      flex-direction: column;
+      padding-left: 5px;
+      padding-right: 5px;
+
+      justify-content: center;
+      width: 100% ;
+    }
+
+    .text-container {
+      text-align: center;
+    }
+
+    .title {
+      font-size: 30px;
+    }
+
+    .row {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .container-default {
+      margin-bottom: 20px;
     }
   }
