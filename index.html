@@ -200,8 +200,8 @@
                   src="/images/iconmonstr-whatsapp-1.svg"></a></div>
           </div>
           <div class="section-right-text-container">
-            <span class="icon-text-1">Whatsapp</span>
-            <span class="icon-text-2">076 481 86 86</span>
+            <a href="https://api.whatsapp.com/send?phone=whatsappphonenumber&text=Hello,%20I%20would%20like%20to%20get%20in%20contact%20with%20you%20to%20sell%20my%20vehicle" target="_blank"><span class="icon-text-1">Whatsapp</span></a>
+            <a href="https://api.whatsapp.com/send?phone=whatsappphonenumber&text=Hello,%20I%20would%20like%20to%20get%20in%20contact%20with%20you%20to%20sell%20my%20vehicle" target="_blank"><span class="icon-text-2">076 481 86 86</span></a>
           </div>
         </div>
         <div class="icon-container">
@@ -300,7 +300,27 @@
       </div> -->
 
 
+<script>
+function incrementCounter(counter, targetValue, duration) {
+  let start = 0;
+  const increment = Math.ceil(targetValue / (duration / 20)); // increment value per step
+  const timer = setInterval(() => {
+    start += increment;
+    counter.innerHTML = start;
+    if (start >= targetValue) {
+      counter.innerHTML = targetValue; // set counter to the exact target value at the end
+      clearInterval(timer); // stop the timer
+    }
+  }, 20); // run the function every 20ms for smoother animation
+}
 
+// Select all the counter elements and loop through them
+const counters = document.querySelectorAll('.banner-grid-item h4');
+counters.forEach(counter => {
+  const targetValue = parseInt(counter.innerHTML);
+  incrementCounter(counter, targetValue, 1500);
+});
+</script>
 
   <script>
     var slideIndex = 0;
@@ -332,26 +352,28 @@
       // Add the 'active' class to the new current slide
       slides[currentSlide].classList.add('active');
     }</script>
-  <script>
-    function incrementCounter(counter, targetValue, duration) {
-      let start = 0;
-      const increment = Math.ceil(targetValue / (duration / 20)); // increment value per step
-      const timer = setInterval(() => {
-        start += increment;
-        counter.innerHTML = start;
-        if (start >= targetValue) {
-          counter.innerHTML = targetValue; // set counter to the exact target value at the end
-          clearInterval(timer); // stop the timer
-        }
-      }, 20); // run the function every 20ms for smoother animation
-    }
+    <script>
+const hamburger = document.querySelector('.hamburger-menu');
+const navMenu = document.querySelector('.nav-items');
+const navLinks = document.querySelectorAll('.nav-items a');
+const overlay = document.querySelector('.overlay');
 
-    // Select all the counter elements and loop through them
-    const counters = document.querySelectorAll('.banner-grid-item h4');
-    counters.forEach(counter => {
-      const targetValue = parseInt(counter.innerHTML);
-      incrementCounter(counter, targetValue, 1500);
-    });</script>
+function toggleMenu() {
+  hamburger.classList.toggle('active');
+  navMenu.classList.toggle('active');
+  overlay.classList.toggle('active');
+}
+
+hamburger.addEventListener('click', toggleMenu);
+overlay.addEventListener('click', toggleMenu);
+
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    hamburger.classList.remove('active');
+    navMenu.classList.remove('active');
+    overlay.classList.remove('active');
+  });
+});</script>
 </body>
 
 </html>
