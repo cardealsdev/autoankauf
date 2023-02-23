@@ -12,18 +12,45 @@
 
 <body>
 
-  <nav>
+  <!-- <nav>
     <div class="logo">
-      <img src="/images/logo-big.png" alt="Logo">
+      <img class ="logo1" src="/images/logo.png" alt="Logo">
     </div>
     <div class="nav-items">
-      <a href="#">Home</a>
+      <a href="/index.html">Home</a>
       <a href="/about_us.html">Über uns</a>
       <a href="/formular.html">Offerte anfordern</a>
     </div>
+    <div class="hamburger" onclick="toggleNav()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav> -->
+
+  <nav>
+    <div class="logo">
+      <img class="logo1" src="/images/logo.png" alt="Logo">
+    </div>
+    <div class="nav-items">
+      <a href="/index.html">Home</a>
+      <a href="/about_us.html">Über uns</a>
+      <a href="/formular.html">Offerte anfordern</a>
+    </div>
+    <div class="hamburger" onclick="toggleNav()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
   </nav>
-
-
+  
+  <div class="overlay23">
+    <div class="overlay-content23">
+      <a href="/index.html">HOME</a>
+      <a href="/about_us.html">Über uns</a>
+      <a href="/formular.html">Offerte anfordern</a>
+    </div>
+  </div>
 
 
 
@@ -59,43 +86,30 @@
     </div>
   </div>
 
-  <form id="form">
-    <!-- <div class="form-group">
-          <label for="name"></label>
-          
-          <input type="text" placeholder="Your Name" id="name" required>
-        </div> -->
+  <form id="form" action="https://formsubmit.co/alalqi10100@gmail.com" method="POST">
     <div class="form-group">
-      <label for="email"></label>
-      <input type="email" placeholder="Your Email" id="email" required>
+      <label for="email">Email:</label>
+      <input type="email" placeholder="Your Email" id="email" name="email" required>
     </div>
     <div class="form-group">
-      <label for="phone"></label>
-      <input type="tel" placeholder="Your phone" id="phone" required>
+      <label for="phone">Phone:</label>
+      <input type="tel" placeholder="Your phone" id="phone" name="phone" required>
     </div>
     <div class="form-group">
-      <label for="marke"></label>
-      <!-- <select id="manufacturer">
-            <option value="audi">Audi</option>
-            <option value="bmw">BMW</option>
-            <option value="toyota">Toyota</option>
-            <option value="volkswagen">Volkswagen</option>
-            <option value="honda">Honda</option>
-          </select> -->
-      <input type="text" placeholder="Marke" id="marke" required>
+      <label for="marke">Marke:</label>
+      <input type="text" placeholder="Marke" id="marke" name="marke" required>
     </div>
     <div class="form-group">
-      <label for="modell"></label>
-      <input type="text" placeholder="Modell" id="modell" required>
+      <label for="modell">Modell:</label>
+      <input type="text" placeholder="Modell" id="modell" name="modell" required>
     </div>
     <div class="form-group">
-      <label for="baujahr"></label>
-      <input type="date" placeholder="Datum der Inverkehrsetzung" id="baujahr">
+      <label for="baujahr">Datum der Inverkehrsetzung:</label>
+      <input type="date" placeholder="Datum der Inverkehrsetzung" id="baujahr" name="baujahr">
     </div>
     <div class="form-group">
-      <label for="image"></label>
-      <input type="file" id="image" accept="image/*">
-
+      <label for="image">Bild:</label>
+      <input type="file" id="image" name="image" accept="image/*">
     </div>
     <input type="submit" value="Verkaufe dein Auto">
   </form>
@@ -178,18 +192,14 @@
           Gebrauchtwagen, unabhängig von Farbe, Laufzahl oder anderen Merkmalen.</div>
       </div>
     </div>
+    <a href="/formular.html" class="btn-secondry">Kontakt</a>
   </div>
 
   <div class="container-watsapp">
     <div class="section-watsapp">
       <div class="section-left">
         <h2 class="section-title">Ihr Partner für den Autoankauf in der Schweiz</h2>
-        <p class="section-text-watsapp">Zudem verfügen wir über langjährige Erfahrung im Autoankauf und bieten Ihnen
-          somit eine kompetente Beratung ebenso wie eine ausgeprägte Marktkenntnis in der Region Basel. Überzeugen Sie
-          sich selbst von unserem hervorragenden Service und kontaktieren Sie uns.
-          Ob in Basel, Hersberg, Roggenburg, Liestal, Oberdorf, Birsfelden, Frenkendorf oder Lausen: ganz egal, wo im
-          Kanton Basel Stadt oder Baselland Sie Ihr Occasions-Auto verkaufen möchten.
-          <strong> Wir stehen im gesamten in der ganzen Region Basel für Sie bereit und freuen uns auf Sie!</strong>
+        <p class="section-text-watsapp">Zudem verfügen wir über langjährige Erfahrung im Autoankauf und bieten Ihnen somit eine kompetente Beratung ebenso wie eine ausgeprägte Marktkenntnis in der gesamten Schweiz. Überzeugen Sie sich selbst von unserem hervorragenden Service und kontaktieren Sie uns. Ganz egal, wo in der Schweiz Sie Ihr Occasions-Auto verkaufen möchten - ob in Basel, Zürich, Genf, Bern, Luzern oder einer anderen Stadt oder Region -<strong> wir sind für Sie bereit und freuen uns auf Sie!</strong>
         </p>
       </div>
       <div class="section-right">
@@ -212,7 +222,7 @@
 
           <div class="section-right-text-container">
             <span class="icon-text-1">Kündenhotline</span>
-            <span class="icon-text-2">0076 481 86 86</span>
+            <span class="icon-text-2">076 481 86 86</span>
           </div>
           <p class="icon-text-2"></p>
         </div>
@@ -223,7 +233,7 @@
 
   <footer class="footer">
     <div class="footer__addr">
-      <h1 class="footer__logo"><img src="/images/logo-big.png" alt="Logo"></h1>
+      <h1 class="footer__logo"><img src="/images/logo.png" alt="Logo"></h1>
     </div>
 
     <ul class="footer__nav">
@@ -340,40 +350,45 @@ counters.forEach(counter => {
       setTimeout(showSlides, 3000); // Change image every 3 seconds
     }
   </script>
-  <script>  const slides = document.querySelectorAll('.slide'); // Select all slide elements
-    let currentSlide = 0; // Set the current slide to the first slide
-    let slideInterval = setInterval(nextSlide, 2000); // Set the interval for the next slide to be displayed (in this case, 2 seconds)
 
-    function nextSlide() {
-      // Remove the 'active' class from the current slide
-      slides[currentSlide].classList.remove('active');
-      // Increment the current slide
-      currentSlide = (currentSlide + 1) % slides.length;
-      // Add the 'active' class to the new current slide
-      slides[currentSlide].classList.add('active');
-    }</script>
     <script>
-const hamburger = document.querySelector('.hamburger-menu');
-const navMenu = document.querySelector('.nav-items');
-const navLinks = document.querySelectorAll('.nav-items a');
-const overlay = document.querySelector('.overlay');
+// const hamburger = document.querySelector('.hamburger-menu');
+// const navMenu = document.querySelector('.nav-items');
+// const navLinks = document.querySelectorAll('.nav-items a');
+// const overlay = document.querySelector('.overlay');
 
-function toggleMenu() {
-  hamburger.classList.toggle('active');
-  navMenu.classList.toggle('active');
-  overlay.classList.toggle('active');
-}
+// function toggleMenu() {
+//   hamburger.classList.toggle('active');
+//   navMenu.classList.toggle('active');
+//   overlay.classList.toggle('active');
+// }
 
-hamburger.addEventListener('click', toggleMenu);
-overlay.addEventListener('click', toggleMenu);
+// hamburger.addEventListener('click', toggleMenu);
+// overlay.addEventListener('click', toggleMenu);
 
-navLinks.forEach(link => {
-  link.addEventListener('click', () => {
-    hamburger.classList.remove('active');
-    navMenu.classList.remove('active');
-    overlay.classList.remove('active');
-  });
-});</script>
-</body>
+// navLinks.forEach(link => {
+//   link.addEventListener('click', () => {
+//     hamburger.classList.remove('active');
+//     navMenu.classList.remove('active');
+//     overlay.classList.remove('active');
+//   });
+// });</script>
+<script>
+  // function toggleNav() {
+  //   const navItems = document.querySelector('.nav-items');
+  //   navItems.classList.toggle('show');
+  // }
+</script><script>
+
+function toggleNav() {
+  const hamburger = document.querySelector('.hamburger');
+const overlay23 = document.querySelector('.overlay23');
+const overlayMenu = document.querySelector('.overlay-content23');
+
+hamburger.addEventListener('click', () => {
+  overlay23.classList.toggle('active');
+  overlayMenu.classList.toggle('active');
+});
+}</script>
 
 </html>
