@@ -14,14 +14,28 @@
 
   <nav>
     <div class="logo">
-      <img class ="logo1" src="/images/logo.png" alt="Logo">
+      <img class="logo1" src="/images/logo.png" alt="Logo">
     </div>
     <div class="nav-items">
       <a href="/index.html">Home</a>
       <a href="/about_us.html">Über uns</a>
       <a href="/formular.html">Offerte anfordern</a>
     </div>
+    <div class="hamburger" onclick="toggleNav()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
   </nav>
+  
+  <div class="overlay23">
+    <div class="overlay-content23">
+      <a href="/index.html">HOME</a>
+      <a href="/about_us.html">Über uns</a>
+      <a href="/formular.html">Offerte anfordern</a>
+    </div>
+  </div>
+
  <div class="banner">
 <h1 id="title1">Dein Auto <span class="text-span">verkaufen?</span></h1>
 <p>Machen Sie Ihren alten Gebrauchtwagen zu Bargeld:</p>
@@ -162,7 +176,18 @@
       </li>
     </ul>
   </footer>
+  <script>
 
+    function toggleNav() {
+      const hamburger = document.querySelector('.hamburger');
+    const overlay23 = document.querySelector('.overlay23');
+    const overlayMenu = document.querySelector('.overlay-content23');
+    
+    hamburger.addEventListener('click', () => {
+      overlay23.classList.toggle('active');
+      overlayMenu.classList.toggle('active');
+    });
+    }</script>
 
 </body>
 
