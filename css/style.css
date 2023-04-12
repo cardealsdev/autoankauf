@@ -699,10 +699,7 @@ body {
   flex:  1 100%;
 }
 
-.footer__addr {
-  margin-right: 1.25em;
-  margin-bottom: 2em;
-}
+
 
 .footer__logo {
   font-family: 'Pacifico', cursive;
@@ -936,7 +933,7 @@ background-color: #0091ff;
   #form {
     display: flex;
     flex-direction: column;
-    max-width: 80%;
+    max-width: 90%;
   }
 
   .container-collum {
@@ -1026,7 +1023,7 @@ background-color: #0091ff;
 
   .banner h1{
     margin-top: 45px;
-    font-size: 46px;
+    font-size: 27px;
   }
   .overlay23 {
     height: 100%;
@@ -1068,6 +1065,13 @@ background-color: #0091ff;
   
   .overlay a:hover, .overlay a:focus {
     color: #ec0606;
+  }
+
+  .bkg{
+    margin: 0 auto;
+    font-size: 13px;
+    padding: 50px;
+    padding-left: 10px;
   }
   
   /* .hamburger {
