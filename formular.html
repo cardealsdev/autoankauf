@@ -42,8 +42,7 @@
 </div>
 
 
-
-  <form id="form" action="https://formsubmit.co/info@carsdeal.ch" method="POST" >
+<form id="form" action="https://getform.io/f/f9046567-30fa-4e36-a3a6-ee2db5a5c7d0" method="POST" enctype="multipart/form-data">
     <div class="form-group">
       <label for="vorname">Vorname</label>
       <input type="text" id="vorname" name="vorname" placeholder="Vorname">
@@ -70,7 +69,7 @@
   </div>
   <div class="form-group">
       <label for="telefon">Telefon*</label>
-      <input type="tel" id="telefon" name="telefon" required placeholder="Telefon">
+      <input type="tel" id="telefon" name="telefon" placeholder="Telefon">
   </div>
   <div class="form-group">
       <label for="email">E-Mail*</label>
@@ -78,13 +77,13 @@
   </div>
 
   <div class="form-group">
-      <label for="hersteller">Hersteller*</label>
+      <label for="hersteller">Hersteller</label>
       <select name="Marke" id="marke">
         <option value="">Marke</option><option value="Abarth">Abarth</option><option value="Acura">Acura</option><option value="Alfa Romeo">Alfa Romeo</option><option value="Aston Martin">Aston Martin</option><option value="Audi">Audi</option><option value="Bentley">Bentley</option><option value="BMW">BMW</option><option value="Brilliance">Brilliance</option><option value="Bugatti">Bugatti</option><option value="Buick">Buick</option><option value="Cadillac">Cadillac</option><option value="Chevrolet">Chevrolet</option><option value="Chrysler">Chrysler</option><option value="Citroën">Citroën</option><option value="Cobra">Cobra</option><option value="Corvette">Corvette</option><option value="Cupra">Cupra</option><option value="Dacia">Dacia</option><option value="Daewoo">Daewoo</option><option value="Daihatsu">Daihatsu</option><option value="Datsun">Datsun</option><option value="Dodge">Dodge</option><option value="Ferrari">Ferrari</option><option value="Fiat">Fiat</option><option value="Fisker">Fisker</option><option value="Ford">Ford</option><option value="GMC">GMC</option><option value="Honda">Honda</option><option value="Hummer">Hummer</option><option value="Hyundai">Hyundai</option><option value="Infiniti">Infiniti</option><option value="Isuzu">Isuzu</option><option value="Iveco">Iveco</option><option value="Jaguar">Jaguar</option><option value="Jeep">Jeep</option><option value="Kia">Kia</option><option value="Königsegg">Königsegg</option><option value="Lada">Lada</option><option value="Lamborghini">Lamborghini</option><option value="Lancia">Lancia</option><option value="Land Rover">Land Rover</option><option value="Landwind">Landwind</option><option value="Lexus">Lexus</option><option value="Lincoln">Lincoln</option><option value="Lotus">Lotus</option><option value="Maserati">Maserati</option><option value="Maybach">Maybach</option><option value="Mazda">Mazda</option><option value="Mercedes-Benz">Mercedes-Benz</option><option value="Mini">Mini</option><option value="Mitsubishi">Mitsubishi</option><option value="Nissan">Nissan</option><option value="Opel">Opel</option><option value="Peugeot">Peugeot</option><option value="Polestar">Polestar</option><option value="Pontiac">Pontiac</option><option value="Porsche">Porsche</option><option value="Proton">Proton</option><option value="Renault">Renault</option><option value="Rolls Royce">Rolls Royce</option><option value="Saab">Saab</option><option value="Seat">Seat</option><option value="Škoda">Škoda</option><option value="Smart">Smart</option><option value="SsangYong">SsangYong</option><option value="Subaru">Subaru</option><option value="Suzuki">Suzuki</option><option value="Talbot">Talbot</option><option value="Tata">Tata</option><option value="Tesla">Tesla</option><option value="Toyota">Toyota</option><option value="Volkswagen">Volkswagen</option><option value="Volvo">Volvo</option><option value="Wiesmann">Wiesmann</option>
       </select>
   </div>
   <div class="form-group">
-      <label for="modell">Modell*</label>
+      <label for="modell">Modell</label>
       <input type="text" id="modell" name="modell"  placeholder="Modell">
   </div>
   <div class="form-group">
@@ -92,7 +91,7 @@
       <input type="text" id="fahrzeugausfuehrung" name="fahrzeugausfuehrung" placeholder="Fahrzeugausführung">
   </div>
   <div class="form-group">
-      <label for="baujahr">Baujahr*</label>
+      <label for="baujahr">Baujahr</label>
       <input type="text" id="baujahr" name="baujahr" placeholder="Baujahr">
   </div>
   <div class="form-group">
@@ -110,11 +109,12 @@
     <div class="form-group">
       <input type="hidden" name="_captcha" value="false">
     </div>
-    <div class="form-group">
-      <input type="hidden" name="_next" value="https://www.carsdeal.ch/thanks.html">
+ <div class="form-group">
+      <label for="image">Bild:</label>
+      <input type="file" id="image" name="attachment" accept="image/png, image/jpeg">
     </div>
     <div>
-      <input type="submit" value="Absenden">
+          <button class="send" type="submit">Verkaufe dein Auto</button>
     </div>
     </form>
   
