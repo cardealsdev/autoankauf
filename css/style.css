@@ -16,6 +16,9 @@ a {
   height: 40px;
 
 }
+.datumin{
+display: block;
+}
 
 .send{
   background-color: #0091ff;
